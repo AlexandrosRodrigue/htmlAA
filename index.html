@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
-        <label id="textoUm">amandaaaaaaaaaa</label><br><br>
-        <input type="date"><br><br>
+        <div id="cima">
+            <div id="carrossel">
+                <!-- Slides do Carrossel -->
+                <div><img src="https://example.com/imagem1.jpg" alt="Slide 1"></div>
+                <div><img src="https://example.com/imagem2.jpg" alt="Slide 2"></div>
+                <div><img src="https://example.com/imagem3.jpg" alt="Slide 3"></div>
+            </div>
+        </div>
+        <div id="meio"></div>
+        <div id="baixo"></div>
         <a href="index2.html"><button >Teste Link BUTÃO</button></a><br>
     </div>
+
+    <!-- Inicialize o Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('#carrossel').slick();
+        });
+    </script>
 </body>
 </html>
