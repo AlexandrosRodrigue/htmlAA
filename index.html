@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Adicione os links para os estilos do Slick Carousel -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+    <!-- Adicione o link para o jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Adicione o link para o script do Slick Carousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,20 +22,24 @@
         <div id="cima">
             <div id="carrossel">
                 <!-- Slides do Carrossel -->
-                <div><img src="https://example.com/imagem1.jpg" alt="Slide 1"></div>
-                <div><img src="https://example.com/imagem2.jpg" alt="Slide 2"></div>
-                <div><img src="https://example.com/imagem3.jpg" alt="Slide 3"></div>
+                <div><img src="IMG_6213.jpg" alt="Slide 1" width="80px" height="110px"></div>
+                <div><img src="5DF4F24A-F55E-4835-9404-5484CEF6018D.jpg" alt="Slide 2" width="80px" height="110px" ></div>
+                <div><img src="505ce31d-d951-4884-917e-f464a6fffd67.jpg" alt="Slide 3" width="80px" height="110px"></div>
             </div>
         </div>
         <div id="meio"></div>
-        <div id="baixo"></div>
-        <a href="index2.html"><button >Teste Link BUTÃO</button></a><br>
+        <div id="baixo">
+            <a href="index2.html"><button >Teste Link BUTÃO</button></a><br>
+        </div>
     </div>
 
-    <!-- Inicialize o Slick Carousel -->
+    <!-- Inicialize o Slick Carousel com carrossel automático -->
     <script>
         $(document).ready(function(){
-            $('#carrossel').slick();
+            $('#carrossel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000, // Tempo em milissegundos entre cada slide
+            });
         });
     </script>
 </body>

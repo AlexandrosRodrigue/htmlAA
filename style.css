@@ -1,6 +1,7 @@
 html{
 
     height: 100%;
+    background-color: blue;
 
 }
 
@@ -12,10 +13,42 @@ body{
 }
 
 #container{
-
+    background-color: black;
     height: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+#cima{
+    height: 30%;
+    width: 100%;
+    background-color: red;
+}
+
+#carrossel{
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
-
 }
+
+
+.imagem{
+    height: 70%;
+    width: 70%;
+    background-color: #fff;
+}
+
+#meio{
+    height: 30%;
+    width: 100%;
+    background-color: green;
+}
+
+#baixo{
+    height: 30%;
+    width: 100%;
+    background-color: yellow;
+}
+
+
