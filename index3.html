@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Adicione os links para os estilos do Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+    <!-- Adicione o link para o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Adicione o link para o script do Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="cima">
+            <div id="carrossel">
+                <!-- Slides do Carrossel -->
+                <div ><img src="IMG_6213.jpg" alt="Slide 1" width="400px" height="200px"></div>
+                <div ><img src="5DF4F24A-F55E-4835-9404-5484CEF6018D.jpg" alt="Slide 2" width="400px" height="200px" ></div>
+                <div ><img src="505ce31d-d951-4884-917e-f464a6fffd67.jpg" alt="Slide 3" width="400px" height="200px"></div>
+            </div>
+        </div>
+        <div id="meioTres">
+            <div id="escrever">
+                <label id="vamosLa">Vamos lá</label>
+            </div>
+            <div id="textoVamosLa">
+                <label>Agora deu de enrolação amor, vamos lá espero que goste momo, puq foram algumas noite dormindo tarde para conseguir fazer ksksk. Então aperte o sinto e comece a viagem</label>
+            </div>
+        </div>
+        <div id="baixoTres">
+            <div id="escritoEscolha">
+                <label>Escolha a forma que você quer ir hoje</label>
+            </div>
+            <div class="escolha">
+                <div class="divButEscolha">
+                    <a href="index4.html"><button class="butEscolha">Específica</button></a><br>
+                </div>
+                <div class="divButEscolha">
+                    <a href="index1.html"><button class="butEscolha">Mês</button></a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicialize o Slick Carousel com carrossel automático -->
+    <script>
+        $(document).ready(function(){
+            $('#carrossel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000, // Tempo em milissegundos entre cada slide
+            });
+        });
+    </script>
+</body>
+</html>
