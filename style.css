@@ -22,10 +22,6 @@ body{
     width: 100%;
 }
 
-.imaa{
-    /* border-radius: 20px; */
-}
-
 #meioTres{
     height: 40%;
     width: 100%;
@@ -39,19 +35,6 @@ body{
     justify-content: center;
 }
 
-#vamosLa{
-    font-size: 25px;
-    font-family: serif;
-}
-
-#textoVamosLa{
-    height: 80%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #aaaa{
     font-size: 20px;
     font-family: serif;
@@ -62,12 +45,31 @@ body{
     width: 100%;
 }
 
-#escritoEscolha{
-    height: 25%;
+#meioIndex3{
+    height: 70%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: blue;
+}
+
+#voltaIndex3{
+    height: 90%;
+    width: 90%;
+    background-color: whitesmoke;
+    border:solid 1px;
+    border-color: black;
+    border-radius: 10%;
+}
+
+#escritoEscolha{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #escolhaForma{
@@ -76,19 +78,24 @@ body{
 }
 
 #dividir{
-    height: 75%;
+    height: 70%;
     width: 100%;
-    display: flex;
 }
 
-.divButEscolha{
-    height: 100%;
-    width: 50%;
+#divButEscolha{
+    height: 40%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+#divButEscolha2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
 .butEscolha{
     height: 50px;
     width: 75px;
