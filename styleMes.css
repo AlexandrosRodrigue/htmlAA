@@ -14,21 +14,27 @@ body{
 #container{
     height: 100%;
     width: 100%;
+    
+}
+
+#scroll{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #560d0d;
+    overflow-y: scroll;
 }
 
 #voltaTudo{
     height: 90%;
     width: 90%;
-    background-color: whitesmoke;
+    background-color: #D7D8D9;
     border:solid 1px;
     border-color: black;
     border-radius: 10%;
     flex-direction: column;
-    overflow:auto;
 }
 
 #cima{
@@ -37,7 +43,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f41e89;
+    
+}
+
+#doTitulo{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 1px;
+    border-color: black;
+    border-radius: 20%;
 }
 
 #meio{
@@ -47,7 +64,22 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #3a8e0c;
+}
+
+#tudoIMG{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#imagem{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    border:solid 1px;
 }
 
 #baixo{
@@ -57,5 +89,21 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0b229f;
+    
+}
+
+#voltaTextoBaixo{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 1px;
+    border-color: black;
+    border-radius: 20%;
+}
+
+#divTexto{
+    height: 90%;
+    width: 85%;
 }

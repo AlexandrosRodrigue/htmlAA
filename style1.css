@@ -48,6 +48,7 @@ body{
     border-color: black;
     border-radius: 20%;
 }
+
 #meioPum{
     height: 80%;
     width: 100%;
@@ -59,7 +60,6 @@ body{
 #paraTexto{
     height: 90%;
     width: 90%;
-    
 }
 
 #baixoPum{
