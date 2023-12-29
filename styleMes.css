@@ -19,3 +19,43 @@ body{
     justify-content: center;
     background-color: #560d0d;
 }
+
+#voltaTudo{
+    height: 90%;
+    width: 90%;
+    background-color: whitesmoke;
+    border:solid 1px;
+    border-color: black;
+    border-radius: 10%;
+    flex-direction: column;
+    overflow:auto;
+}
+
+#cima{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f41e89;
+}
+
+#meio{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a8e0c;
+}
+
+#baixo{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b229f;
+}
