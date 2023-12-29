@@ -1,0 +1,79 @@
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+
+}
+
+#containerUm{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8d83e6;
+}
+
+#voltaTudo{
+    height: 90%;
+    width: 90%;
+    background-color: whitesmoke;
+    border:solid 1px;
+    border-color: black;
+    border-radius: 10%;
+}
+
+#cimaPum{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#doTitulo{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border:solid 1px;
+    border-color: black;
+    border-radius: 20%;
+}
+#meioPum{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#paraTexto{
+    height: 90%;
+    width: 90%;
+    
+}
+
+#baixoPum{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dividirEscolha{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
