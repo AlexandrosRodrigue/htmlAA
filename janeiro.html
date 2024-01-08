@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styleMes.css">
+    <script>
+        $(document).ready(function() {
+            // Lista de URLs das imagens
+            var imagens = [
+                'janeiroIMG/baianinha.PNG',
+                'janeiroIMG/contatoGrande.PNG',
+                'janeiroIMG/vida.PNG',
+                'janeiroIMG/memo.PNG'
+
+                // Adicione mais URLs conforme necessário
+            ];
+        
+            // Índice da imagem atual
+            var currentIndex = 0;
+        
+            // Função para exibir a próxima imagem
+            function mostrarProximaImagem() {
+                $('#imagem').attr('src', imagens[currentIndex]);
+                currentIndex = (currentIndex + 1) % imagens.length;
+            }
+        
+            // Configuração do intervalo para trocar as imagens automaticamente
+            setInterval(mostrarProximaImagem, 3000); // Troca a cada 3 segundos (3000 milissegundos)
+        });
+        </script>
+        
+
 </head>
 <body>
     <div id="container">
@@ -12,18 +40,20 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Virada</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="janeiroIMG/baianinha.PNG" id="imagem">
+                        
+                        <!-- <img src="janeiroIMG/deliciaPronta.jpg" id="imagem"> -->
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Minha princesa pronta pra passar um pouco de raiva na virada kkkk, vc tava muito linda amor, minha maior magoa foi não conseguir passar a hr dos fogos com vc.</label>
                         </div>
                     </div>
                 </div>
@@ -31,6 +61,192 @@
         </div>
     </div>
 
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">05/01/2023</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/efeito.PNG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Quando a gnt fica até tarde viajando, conversando até não aguentar mais de sono, msm eu tendo q acordar cedo ficava o maximo q conseguia, mas tbm dormindo sem dizer nada simplesmente apagando, desculpa momo</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Se liga</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/olho.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Poxa amor, coisas bobas isso pensei q tava mentindo pla mim</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Preocupado</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/lucas.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Eai cunha, aprovado agr?</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Destino?</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/A.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Alexandros?</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Que moral emm</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/compartilhasReels.PNG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Primeira na lista pra compartilhar reels eitaaa, na época só engraçados pra ti pensar que eu era tbm, ficava um tempão procurando selecionando um bom pra ti mandar</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Descobertas</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/descobrindoEmojis.PNG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Inicio de uma mania</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">SMS</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/sms.PNG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Quando estavamos de férias e tinhamos bastante tempo livre e nada pra fazer e muito asunto tbm q até pelo SMS a gnt conversava kkkkk e nas outras tbm no msm tempo sempre asustos diferentes.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Contatos</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/baianinha.PNG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Quero começar com a nossa história mostrando os diferentes jeitos do</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="container">
         <div id="scroll">
             <div id="voltaTudo">
@@ -54,7 +270,52 @@
             </div>
         </div>
     </div>
-
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">31/01/2022</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">a</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">31/01/2022</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">a</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="container">
         <div id="scroll">
             <div id="voltaTudo">
