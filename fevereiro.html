@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styleMes.css">
+    <script>
+        $(document).ready(function() {
+            // Lista de URLs das imagens
+            var imagens = [
+                'fevereiro/life.PNG',
+                'fevereiro/lifeDois.PNG'
+
+                // Adicione mais URLs conforme necessário
+            ];
+        
+            // Índice da imagem atual
+            var currentIndex = 0;
+        
+            // Função para exibir a próxima imagem
+            function mostrarProximaImagem() {
+                $('#imagem').attr('src', imagens[currentIndex]);
+                currentIndex = (currentIndex + 1) % imagens.length;
+            }
+        
+            // Configuração do intervalo para trocar as imagens automaticamente
+            setInterval(mostrarProximaImagem, 2000); // Troca a cada 3 segundos (3000 milissegundos)
+        });
+        </script>
 </head>
 <body>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Life</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="fevereiro/life.PNG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Quando vc falou pra mim baixar nem sabia oq era isso mas gostei a unica coisa que não gostei foi q me lembrava q não podia  nem entrar na sua casa te ver mesmo estando por perto</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="container">
         <div id="scroll">
             <div id="voltaTudo">
