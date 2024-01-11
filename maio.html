@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styleMes.css">
+    <script>
+        $(document).ready(function() {
+            // Lista de URLs das imagens
+            var imagens = [
+                'maio/essaCarrinho.jpg',
+                'maio/parque.jpg',
+                'maio/parqueCarrinho.jpg',
+                'maio/parqueRoda.jpg',
+                'maio/voltaParque.JPG'
+
+                // Adicione mais URLs conforme necessário
+            ];
+        
+            // Índice da imagem atual
+            var currentIndex = 0;
+        
+            // Função para exibir a próxima imagem
+            function mostrarProximaImagem() {
+                $('#imagem').attr('src', imagens[currentIndex]);
+                currentIndex = (currentIndex + 1) % imagens.length;
+            }
+        
+            // Configuração do intervalo para trocar as imagens automaticamente
+            setInterval(mostrarProximaImagem, 2000); // Troca a cada 3 segundos (3000 milissegundos)
+        });
+        </script>
+
+        
 </head>
 <body>
     <div id="container">
@@ -12,18 +41,41 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Tupã</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="maio/essaCarrinho.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Bom não sei muito o que dizer sobre esse dia amor só tenho certeza que nem um de nois ira esquecer foi um dia muito diferente e divertido seja com os gritos da duda e manu ou os nossos quando ficamos de cabeça para baixo achando que iramos morrer kkkkk</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Ninguem pode</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="maio/voadeira.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Maio começou ja e tava a todo vapor mostrando oq vai acontecer se alguem mexer com a minha momozinha bglh é loko</label>
                         </div>
                     </div>
                 </div>
@@ -36,18 +88,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Shoping</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="maio/pracaMomos.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Esse mês tbm foi de muitas voltinhas e algumas no shoping com a rapaizi</label>
                         </div>
                     </div>
                 </div>
@@ -60,21 +112,93 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Davi</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="maio/batizado.JPG" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Batizado do Davi tbm rolou conheceu mais a familia foi uma viagemzinha até governador mas valeu apena primeira na igreja teve algumas risadas com os 'amgs' da gloria groove tive que pesquisar pra saber como escreve dps para a casa da bila comer né que foi uma coisa que fizemos bastante tbm esse mês</label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Doritossssss</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMGdois">
+                        <img src="maio/doritos.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Cmoidaaa tinha tudo que eu gosto vc,doritos,coca e empadão hmmmmmmmm eu gostummmm</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Cursoo</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="maio/IMG_6573.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Tenho muito orgulho da minha namorada acordando cedo todo sabado para ir no senai ainda bem que não durou muito mais tempo esse curso mas mesmo assim rendeu algumas histórias CobraKai kkkkkk que loucura o dia que tu esqueceu o celular tbm kk</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Trabalhadores</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="maio/indoTrabalho.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Esse dia saimos correndo de casa para ir junto com a tua mãe trabalhar não tinhamos ideia de como ia ser eu plmns não tinha mas la foi muito dboa apesar de trabalhando eu tava muito feliz pois tava com vc amor e minha sogrinha tbm cansou mas valeu muito </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
