@@ -4,7 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styleMes.css">
+    <script>
+        $(document).ready(function() {
+            // Lista de URLs das imagens
+            var imagens = [
+                'julho/4naJunina.jpg',
+                'julho/euVoceJunina.jpg',
+                'julho/fogueira.JPG',
+                'julho/mesaJunina.jpg',
+                'julho/um.jpg',
+                'julho/peixes.JPG',
+                'julho/dois.jpg',
+                'julho/IMG_6999.jpg'
+
+                // Adicione mais URLs conforme necessário
+            ];
+        
+            // Índice da imagem atual
+            var currentIndex = 0;
+        
+            // Função para exibir a próxima imagem
+            function mostrarProximaImagem() {
+                $('#imagem').attr('src', imagens[currentIndex]);
+                currentIndex = (currentIndex + 1) % imagens.length;
+            }
+        
+            // Configuração do intervalo para trocar as imagens automaticamente
+            setInterval(mostrarProximaImagem, 2000); // Troca a cada 3 segundos (3000 milissegundos)
+        });
+        </script>
+
+
 </head>
 <body>
     <div id="container">
@@ -12,18 +44,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Junina</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="julho/4naJunina.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Julho é mês de festa juninaaaa q gostamos bastante não sei muito oq dizer desse dia kkkkk pq mds briga comidas tudo a gente ja tava esperando essa festa faz um tempinho teve alguns preparativos ir no centro comprar as coisas paçocas procurar uma saia e uma cola que no final por engano virou um cabo de carregador</label>
                         </div>
                     </div>
                 </div>
@@ -36,18 +68,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Aliança</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="julho/anel.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Mas antes dessa festa junina ali em cima tivemos uma mais importante não a festa em si mas o dia oq aconteceu dps foi o dia q eu te entreguei as alianças ja estava um tempo esperando o dia para dar tava muito nervoso pois queria que fosse uma coisa especial e espero que tenha sido para vc dps só infelizmente não estava do tamanho muito certo a sua dai começou a saga que durou um tempo indo algumas vezes na sóPrata </label>
                         </div>
                     </div>
                 </div>
