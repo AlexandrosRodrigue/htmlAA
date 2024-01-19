@@ -66,6 +66,16 @@ body{
     justify-content: center;
 }
 
+#meioQuatro{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 #meioTres{
     height: 40%;
     width: 100%;
@@ -119,6 +129,16 @@ body{
 
 #baixoTres{
     height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#baixoQuatro{
+    height: 45%;
     width: 100%;
     display: flex;
     flex-direction: column;
