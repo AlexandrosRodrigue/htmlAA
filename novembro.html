@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styleMes.css">
+    <script>
+        $(document).ready(function() {
+            // Lista de URLs das imagens
+            var imagens = [
+                'novembro/lavandeiria.JPG',
+                'novembro/pacheco.JPG'
+                // Adicione mais URLs conforme necessário
+            ];
+        
+            // Índice da imagem atual
+            var currentIndex = 0;
+        
+            // Função para exibir a próxima imagem
+            function mostrarProximaImagem() {
+                $('#imagem').attr('src', imagens[currentIndex]);
+                currentIndex = (currentIndex + 1) % imagens.length;
+            }
+        
+            // Configuração do intervalo para trocar as imagens automaticamente
+            setInterval(mostrarProximaImagem, 2000); // Troca a cada 3 segundos (3000 milissegundos)
+        });
+        </script>
+
 </head>
 <body>
     <div id="container">
@@ -12,18 +36,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Trabalhos</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="novembro/lavandeiria.JPG" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Novembro foi um mês de muito trabalho tanto pra mim tanto pra vc tive descidir entre a lavandeiria e o pacheco onde achei um tempo q seriam bons mas vc sempre me falando avisando q nem tanto muito obrigado mo sempre me aconselhando msm eu não escutando na hr sempre levo em conta sua opinião</label>
                         </div>
                     </div>
                 </div>
@@ -36,18 +60,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Caio</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="novembro/caio.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Falei q foi para nos dois pq vc tbm estava na luta né poxa sempre esteve na real né sempre ta cuidando do Caio ajudando sua mãe nas faxinas fznd as coisas em casa isso que eu admiro muito em vc amor a guri mais guerreira q eu ja conheci tenho muito orgulho de vc amor de te ter como minha namorada mlr compania para o resto da minha vida</label>
                         </div>
                     </div>
                 </div>
@@ -60,18 +84,140 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Praia</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="novembro/euVoce.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">No trapiche de jrr com os manos dando uma voltinha vista tava muito linda e essa midia tbm qnd saimos assim tds juntos sempre sei q vai ser um dia especial</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Novo morador</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="novembro/gatoPreto.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Mais um morador para nossa casa o menor mas o mais folgado só q msm assim não da pra resistir a ele</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">logo ali</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="novembro/volta.JPG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Dia q fomos só dar uma voltinha em canas mas acabamos comprando duas doses só pra, não esqueço da volta tu e luana bem d jegas no uber</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Rodizio</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="novembro/rodizio.JPG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Demos algumas voltinhas esse mês emm dessa vez a gente tava indo no rodizio de mine hamburguer com os colegas d escola muito bons os xis até os d chocolate né q alguém comeu o meu mas foi um dia muito dahora com miguel e braian juntos tbm</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Galega</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="novembro/galega.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">No nosso cantinho nossa praia na real nossa praia msm é a lagoinha né mas a galega tem um espaço especial para a gnt nesse dia com Lucas luana e geovana</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Xis</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="novembro/xis.JPG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Esses xis só pra gnt qnd mãe e pai no show do Daza a gnt em casa do jeito q gostamos</label>
                         </div>
                     </div>
                 </div>
