@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styleMes.css">
+    <script>
+        $(document).ready(function() {
+            // Lista de URLs das imagens
+            var imagens = [
+                'outubro/pretoBranco.JPG',
+                'outubro/euVcoce.JPG',
+                'outubro/mao.JPG',
+                'outubro/familia.jpg',
+                'outubro/vo.jpg',
+                'outubro/algodaoDoce.jpg'
+
+                // Adicione mais URLs conforme necessário
+            ];
+        
+            // Índice da imagem atual
+            var currentIndex = 0;
+        
+            // Função para exibir a próxima imagem
+            function mostrarProximaImagem() {
+                $('#imagem').attr('src', imagens[currentIndex]);
+                currentIndex = (currentIndex + 1) % imagens.length;
+            }
+        
+            // Configuração do intervalo para trocar as imagens automaticamente
+            setInterval(mostrarProximaImagem, 2000); // Troca a cada 3 segundos (3000 milissegundos)
+        });
+        </script>
+
 </head>
 <body>
     <div id="container">
@@ -12,18 +41,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Aniversario Davi</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="outubro/pretoBranco.JPG" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Aniversario dele foi um dia muito bom tinha bastante gente até as primas da mãe tbm de Crisciuma q vc conheceu la tiramos varias midias comemos bastante tbm pagando varias lembrancinhas bricamos com o Davi fiquei muito feliz amor de vc estar casa vez mais proxima de toda a minha familia</label>
                         </div>
                     </div>
                 </div>
@@ -36,18 +65,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Chamada</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="outubro/chamada.PNG" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Nossas chamadas para matar a saudades qnd eu estava no intervalo do curso sempre é muito dificil ficar longe mas davamos um jeito pior sensação é ter q sair correndo td dia te deixando sozinha mas é um esforço q temos q fzr mas pra frente vai ser mlr momozinha</label>
                         </div>
                     </div>
                 </div>
@@ -60,18 +89,90 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Jogadores</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="outubro/mineGrafit.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Época q estamos viciados em jogar era muito divertido as nos 4 mas geralmente so eu e vc msm pena q o Kauan é desse jeito mas fzr oq é uma escolha deles seria divertido fzr alguma coisa as vezes</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Bicudinha</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="outubro/bicuda.JPG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Isso na casa da cunha Roberta minha bicuda um pouco antes de irmos para o aniversario do pai do Carlinhos e João deu pra jogar bastante aquele dia e ficar um pouco mais proximos dos outros Cloutt</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Cinema</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="outubro/filme.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Descidimos ir no cinema com o pai e com a mãe dai começou a luta para achar um bom para ver não tinhamos muita certeza d qual ver pai queria outro mas graças a Deus não vimos pois iamos perder nosso futuro filme favorito ainda achamos a Geovana e o Kauan na fila</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Cozinheiros</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="outubro/dog.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Amo qnd fazemos coisas novas, receitas seja oq for, cozinhar juntos ja é uma coisa q vai ser sempre nossa, vc é minha metade amor minha bebezinha esperta sabe fzr qlqr coisa, lembro q ficou muito bom nossos dogs</label>
                         </div>
                     </div>
                 </div>
