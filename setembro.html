@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styleMes.css">
+    <script>
+        $(document).ready(function() {
+            // Lista de URLs das imagens
+            var imagens = [
+                'setembro/lili.jpg',
+                'setembro/pipa.jpg'
+
+                // Adicione mais URLs conforme necessário
+            ];
+        
+            // Índice da imagem atual
+            var currentIndex = 0;
+        
+            // Função para exibir a próxima imagem
+            function mostrarProximaImagem() {
+                $('#imagem').attr('src', imagens[currentIndex]);
+                currentIndex = (currentIndex + 1) % imagens.length;
+            }
+        
+            // Configuração do intervalo para trocar as imagens automaticamente
+            setInterval(mostrarProximaImagem, 2000); // Troca a cada 3 segundos (3000 milissegundos)
+        });
+        </script>
+
 </head>
 <body>
     <div id="container">
@@ -12,18 +37,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Zinga</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="setembro/lili.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Dia q a gnt foi dar uma voltinha no zinga, soltar uma pipa jogar bola comer tudo de bom até fzr uma amizade nova, a lili coisinha mais fofa</label>
                         </div>
                     </div>
                 </div>
@@ -36,18 +61,18 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Alivio</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="setembro/teste.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Setembro foi o mês do maior susto q passamos juntos de vrdd dessa vez pensamos q tu estava mas graças a Deus a gnt sempre esteve juntos em todos os momentos principalmente nesses tbm achei importante por esse momento</label>
                         </div>
                     </div>
                 </div>
@@ -60,18 +85,90 @@
             <div id="voltaTudo">
                 <div id="cima">
                     <div id="doTitulo">
-                        <label id="titulo">31/01/2022</label>
+                        <label id="titulo">Meczada</label>
                     </div>
                 </div>
                 <div id="meio">
                     <div id="tudoIMG">
-                        <img src="janeiroIMG/deliciaPronta.jpg" id="imagem">
+                        <img src="setembro/mac.jpg" id="imagem">
                     </div>
                 </div>
                 <div id="baixo">
                     <div id="voltaTextoBaixo">
                         <div id="divTexto">
-                            <label id="texto">a</label>
+                            <label id="texto">Teve meczinho tbm na época q comecei a trabalhar na lavação aquele gaucho sfd tava até me devendo nessa hr mas dps pagou</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Chuvinha</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="setembro/guardaChuva.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Gosto muito dessa foto minha princesa ta muito linda nesse dia foi um dia dps do nosso aniversario de namoro dai a gnt foi no fort de manhã comprar besteiras</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Vira casaca</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="setembro/caneca.jpg" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Essa é minha foto favorita mostrando a vrdd sobre vc q sempre soube maior torcedora que existe do Figueirense</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="scroll">
+            <div id="voltaTudo">
+                <div id="cima">
+                    <div id="doTitulo">
+                        <label id="titulo">Xis</label>
+                    </div>
+                </div>
+                <div id="meio">
+                    <div id="tudoIMG">
+                        <img src="setembro/xiss.JPG" id="imagem">
+                    </div>
+                </div>
+                <div id="baixo">
+                    <div id="voltaTextoBaixo">
+                        <div id="divTexto">
+                            <label id="texto">Todo mês tem q ter um xis</label>
                         </div>
                     </div>
                 </div>
